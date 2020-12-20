@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>flower shop</title>
+	<style>
+		#title{
+			height: 40px;
+			width: 1515px;
+			background-color: pink;
+		}
+		#inputon1{
+			position: absolute;
+			left: 1440px;
+			top: 10px;
+		}
+		#inputon2{
+			position: absolute;
+			left: 1400px;
+			top: 10px;
+		}
+		#h3{
+			height: 30px;
+			color: orange;
+			text-align: center;
+		}
+		#ulid{
+			position: absolute;
+			width: 1203px;
+			list-style-type: none;
+			margin: 0 auto;
+			padding: 0;
+			left: 156px;
+			top: 40px;
+			overflow: hidden;
+			background-color: yellow;
+		}
+		#liid{
+			float: left;
+		}
+		li>a{
+			display: block;
+			color: green;
+			text-align: center;
+			padding: 14px 68px;
+			text-decoration: none;
+		}
+		li>a:hover{
+			background-color: pink;
+		}
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		#a{
+			text-decoration: none;
+		}
+		#container{
+			position: absolute;
+			width: 400px;
+			height: 300px;
+			left: 610px;
+			top: 92px;
+			margin:  auto -50px auto;
+			box-shadow: 0 0 5px green;
+			overflow: hidden;
+		}
+		#wrap{
+			position: absolute;
+			width: 2400px;
+			height: 300px;
+			z-index: 1;
+		}
+		img{
+			float: left;
+			width: 400px;
+			height: 300px;
+		}
+		#buttons{
+			position: absolute;
+			right: 150px;
+			bottom: 20px;
+			width: 100px;
+			height: 10px;
+			z-index: 2;
+		}
+		.span{
+			margin-left: 5px;
+			display: inline-block;
+			width: 10px;
+			height: 20px;
+			border-radius: 50%;
+			background-color: green;
+			text-align: center;
+			color: white;
+			cursor: pointer;
+		}
+		#spanon{
+			background-color: red;
+		}
+		#a{
+			position: absolute;
+			top: 36%;
+			color: green;
+			padding: 0px 14px;
+			border-radius: 50%;
+			font-size: 50px;
+			z-index: 2;
+			display: none;
+		}
+		.left{
+			left: 10px;
+		}
+		.right{
+			right: 10px;
+		}
+		#container:hover #a{
+			display: block;
+		}
+		#container #a:hover{
+			background-color: rgba(0,0,0,0.2);
+		}
+		.class{
+			width: 400px;
+			height: 300px;
+			background-color: #ff1100;
+		}
+		.img{
+			width: 300px;
+			height: 200px;
+		}
+		#input{
+			width: 100px;
+			height: 50px;
+		}
+
+		#div1{
+			position: relative;
+			left: 157px;
+			top: 50px;
+			border:solid green;
+			border-width: 1px;			
+		}
+		#input1{
+			position: absolute;
+			width: 100px;
+			height: 50px;
+			left:150px;
+		}
+		#p1{
+			background-position: left top;
+		}
+		#input1{
+			position: absolute;
+			width: 100px;
+			height: 50px;
+			right:0px;
+		}
+		#img1{
+			position: absolute;
+			right: 50px;
+			top: 0px;
+		}
+		#idp1{
+			position: absolute;
+			width: 380px;
+			height: 100px;
+			top: 200px;
+			left: 10px;
+			background-color: green;
+		}
+
+		#div2{
+			position: relative;
+			left: 958px;
+			top: -252px;
+			border:solid green;
+			border-width: 1px;		
+		}
+		#input2{
+			position: absolute;
+			width: 100px;
+			height: 50px;
+			left:150px;
+		}
+		#img2{
+			position: absolute;
+			left: 50px;
+			top: 0px;
+		}
+		#idp2{
+			position: absolute;
+			width: 380px;
+			height: 100px;
+			top: 200px;
+			left: 10px;
+			background-color: green;
+		}
+
+		#div3{
+			position: relative;
+			left: 157px;
+			top: -252px;
+			border:solid green;
+			border-width: 1px;			
+		}
+		#input3{
+			position: absolute;
+			width: 100px;
+			height: 50px;
+			left:150px;
+		}
+		#img3{
+			position: absolute;
+			right: 50px;
+			top: 0px;
+		}
+		#idp3{
+			position: absolute;
+			width: 380px;
+			height: 100px;
+			top: 200px;
+			left: 10px;
+			background-color: green;
+		}
+
+		#div4{
+			position: relative;
+			left: 958px;
+			top: -554px;
+			border:solid green;
+			border-width: 1px;
+		}
+		#input4{
+			position: absolute;
+			width: 100px;
+			height: 50px;
+			left:150px;
+		}
+		#img4{
+			position: absolute;
+			left: 50px;
+			top: 0px;
+		}
+		#idp4{
+			position: absolute;
+			width: 380px;
+			height: 100px;
+			top: 200px;
+			left: 10px;
+			background-color: green;
+		}
+		#div5{
+			position: absolute;
+			left: 557px;
+			top: 390px;
+			border:solid green;
+			border-width: 1px;
+		}
+		#input5{
+			position: absolute;
+			width: 100px;
+			height: 50px;
+			left:150px;
+		}
+		#img5{
+			position: absolute;
+			width: 380px;
+			left: 10px;
+			top: 0px;
+		}
+		#idp5{
+			position: absolute;
+			width: 380px;
+			left: 10px;
+			height: 100px;
+			top: 200px;
+			background-color: green;
+		}
+		#div{
+			width: 100%;
+			height: 100%;
+			border: 1px;
+			background-color: rgba(208,208,208,0.3);
+			left: 0;
+			top: 0;
+			position: absolute;
+			z-index: 3;
+		}
+		#cdiv{
+			width: 400px;
+			height: 260px;
+			padding: 13px;
+			position: relative;
+			left: 35%;
+			top: 35%;
+			background-color: grey;
+			border-radius: 10px;
+			text-align: center;
+			z-index: 4;
+		}
+		#cspan{
+			margin: 10px auto;
+			position: absolute;
+			left: 70px;
+			font-size: 14px;
+			font-family: 宋体;
+			width: 65px;
+			height: 25px;
+			line-height: 28px;
+			text-align: center;
+			color: black;
+			border-radius: 5px;
+		}
+		#cinput{
+			width: 278px;
+			height: 28px;
+			line-height: 10px;
+			margin: 10px auto;
+			border-top-right-radius: 5px;
+			border-bottom-right-radius: 5px;
+			border: 1px;
+		}
+		#cbtn{
+			position: relative;
+			left: 170px;
+		}
+		#cinput3{
+			position: relative;
+			left: 25px;
+			font-size: 14px;
+			font-family: 宋体;
+			width: 270px;
+			height: 28px;
+			line-height: 28px;
+			text-align: center;
+			color: white;
+			background-color: #3BD9FF;
+			border-radius:6px ;
+			border: 0;
+		}
+		#cinput33{
+			position: relative;
+			left: 0px;
+			font-size: 14px;
+			font-family: 宋体;
+			width: 270px;
+			height: 28px;
+			line-height: 28px;
+			text-align: center;
+			color: white;
+			background-color: #3BD9FF;
+			border-radius:6px ;
+			border: 0;
+		}
+		#ca{
+
+			font-size: 12px;
+			color: red;
+			text-decoration: none;
+			position: relative;
+			top: 25px;
+			left: -250px;
+		}
+		#ca:hover{
+			color: blue;
+			text-decoration: underline;
+		}
+		#cdivs{
+			padding: 0 28px;
+		}
+ 	    #wrapn{
+        	position: absolute;
+        	width: 150px;
+        	height: 655px;
+        	background-color: pink;
+        	left: 1361px;
+        	top: 40px;
+    	}
+    	#header{
+        	position: absolute;
+        	width: 100%;
+        	height: 65px;
+        	background-color: green;
+        	font-size: 24px;
+        	color: #fff;
+        	text-align: center;
+        	line-height: 65px;
+        	top: 0px;
+    	}
+   	 	#nav{
+        	position: absolute;
+        	width:150px;
+        	margin: 10px 0px 0;
+        	top: 50px;
+    	}
+    	#list{
+        	margin-bottom: 0px;
+        	list-style: none;
+    	}
+    	h2{
+        	position: relative;
+        	padding: 15px 0;
+        	background-color: pink;
+        	text-align: center;
+        	font-size: 16px;
+        	color: white;
+        	transition: .5s;
+    	}
+    	#on{
+    	    background-color: #393c4a;
+    	}
+    	i{
+        	position: absolute;
+        	right: 10px;
+        	top: 16px;
+        	border: 8px solid transparent;
+        	border-left-color: white;
+        	transform:rotate(0deg);
+        	transform-origin: 1px 8px;
+        	transition: .5s;
+    	} 
+   	 	#ion{
+        	transform:rotate(90deg);
+    	}
+    	.hide{
+        	overflow: hidden;
+        	height: 0;
+        	transition: .5s;
+    	}
+    	h5{
+       	 	padding: 10px 0;
+        	background-color:#ff0077;
+        	text-align: center;
+        	color:#fff;
+        	border-bottom: white;
+    	} 
+    	#cimg{
+    		width: 150px;
+    		height: 655px;
+    		position: absolute;
+    		left: 10px;
+    		top: 40px;
+    	}
+	</style>
+</head>
+<body>
+	<div id="title">
+		<h3 id="h3">鸟语花香店</h3>
+	</div>
+	<ul id="ulid">
+		<li id="liid"><a href="#home">小店介绍</a></li>
+		<li id="liid"><a href="#home">花种介绍</a></li>
+		<li id="liid"><a href="#home">人员介绍</a></li>
+		<li id="liid"><a href="#home">联系我们</a></li>
+		<li id="liid"><a href="#home">更多花束</a></li>
+		<li id="liid"><a href="#home">加入我们</a></li>
+	</ul>
+	<div id="container">
+		<div id="wrap" style="left:-400px;">
+			<img src="C:\Users\DELL\Desktop\img4.jpg" alt="">
+			<img src="C:\Users\DELL\Desktop\img1.jpg" alt="">
+			<img src="C:\Users\DELL\Desktop\img2.jpg" alt="">
+			<img src="C:\Users\DELL\Desktop\img3.jpg" alt="">
+			<img src="C:\Users\DELL\Desktop\img4.jpg" alt="">
+			<img src="C:\Users\DELL\Desktop\img1.jpg" alt="">
+		</div>
+		<div id="buttons">
+			<span id="spanon" class="span">1</span>
+			<span class="span">2</span>
+			<span class="span">3</span>
+			<span class="span">4</span>
+		</div>
+		<a id="a" href="javascript:;" class="left">&lt;</a>
+		<a id="a" href="javascript:;" class="right">&gt;</a>
+	</div>
+	<div id="div1" class="class">
+		<img id="img1" class="img" src="C:\Users\DELL\Desktop\img1.jpg" alt="">
+		<p id="p1"></p>
+		<p id="idp1"><input id="input1" type="button" name="" value="购买"></p>
+	</div>
+	<div id="div2" class="class">
+		<img id="img2" class="img" src="C:\Users\DELL\Desktop\img2.jpg" alt="">
+		<p id="p2"></p>
+		<p id="idp2"><input id="input2" type="button" name="" value="购买"></p>
+	</div>
+	<div id="div3" class="class">
+		<img id="img3" class="img" src="C:\Users\DELL\Desktop\img3.jpg" alt="">
+		<p id="p3"></p>
+		<p id="idp3"><input id="input3" type="button" name="" value="购买"></p>
+	</div>
+	<div id="div4" class="class">
+		<img id="img4" class="img" src="C:\Users\DELL\Desktop\img4.jpg" alt="">
+		<p id="p4"></p>
+		<p id="idp4"><input id="input4" type="button" name="" value="购买"></p>
+	</div>
+	<div id="div5" class="class">
+		<img id="img5" class="img" src="C:\Users\DELL\Desktop\img4.jpg" alt="">
+		<p id="p5"></p>
+		<p id="idp5"><input id="input5" type="button" name="" value="购买"></p>
+	</div>
+	<input id="inputon1" type="button" name="" value="登录" onclick="login()">
+	<input id="inputon2" type="button" name="" value="注册" onclick="register()">
+    <div id="wrapn">
+        <div id="header">本店花种分类</div>
+        <div id="nav">
+            <ul>
+                <li id="list">
+                    <h2><i></i>春季花</h2>
+                    <div class="hide">
+                        <h5>栀子花</h5>
+                        <h5>桃花</h5>
+                        <h5>月季</h5>
+                        <h5>梨花</h5>
+                        <h5>康乃馨</h5>
+                        <h5>迎春花</h5>
+                    </div>
+                </li>
+                <li id="list">
+                    <h2><i></i>夏季花</h2>
+                    <div class="hide">
+                        <h5>茉莉花</h5>
+                        <h5>荷花</h5>
+                        <h5>曼陀罗</h5>
+                        <h5>六月雪</h5>
+                        <h5>百合</h5>
+                        <h5>玫瑰</h5>
+                    </div>
+                </li>
+                <li id="list">
+                    <h2><i></i>秋季花</h2>
+                    <div class="hide">
+                        <h5>菊花</h5>
+                        <h5>桂花</h5>
+                        <h5>蓝花楹</h5>
+                        <h5>含羞草</h5>
+                        <h5>鸡冠花</h5>
+                        <h5>葱兰</h5>
+                    </div>
+                </li>
+                <li id="list">
+                    <h2><i></i>冬季花</h2>
+                    <div class="hide">
+                        <h5>梅花</h5>
+                        <h5>长寿花</h5>
+                        <h5>一品红</h5>
+                        <h5>水仙</h5>
+                        <h5>大丽花</h5>
+                        <h5>仙人指</h5>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <img id="cimg" src="C:\Users\DELL\Desktop\flow.jpg">
+	<script>
+		index=0;
+		i=0;
+		a=0;
+		var cwrap=document.getElementById("wrap");
+		var cnext=document.querySelector(".right");
+		var cprev=document.querySelector(".left");
+		cnext.onclick=function(){
+			nextpic();
+		}
+		cprev.onclick=function(){
+			prevpic();
+		}
+		function nextpic(){
+			var newleft;
+			if(cwrap.style.left=="-1600px"){
+				newleft=-400;
+			}
+			else{
+				newleft=parseInt(cwrap.style.left)-400;
+			}
+			cwrap.style.left=newleft+"px";
+			index++;
+			if(index>3){
+				index=0;
+			}
+			showCurrentDot();
+		}
+		function prevpic(){
+			var newright;
+			if(cwrap.style.left=="0px"){
+				newright=-1600;
+			}
+			else{
+				newright=parseInt(cwrap.style.left)+400;
+			}
+			cwrap.style.left=newright+"px";
+			index--;
+			if(index<0){
+				index=3;
+			}
+			showCurrentDot();
+		}
+		var timer=null;
+		function autoPlay(){
+			timer=setInterval("nextpic()",5000);
+		}
+		function autoleft(){
+			if(cwrap.style.left=="-2000px"){
+				a=-400;
+				i1=setInterval("leftPlay()",20);
+			}
+			else{
+				a=parseInt(cwrap.style.left);
+				i1=setInterval("leftPlay",20);
+			}
+		}
+		autoPlay();
+		var ccontainer=document.getElementById("container");
+		ccontainer.onmouseenter=function(){
+			clearInterval(timer);
+		}
+		ccontainer.onmouseleave=function(){
+			autoPlay();
+		}
+		cdots=document.getElementsByTagName("span");
+		var showCurrentDot=function(){
+			for(var i=0,len=cdots.length;i<len;i++){
+				cdots[i].setAttribute("id","");
+			}
+			cdots[index].setAttribute("id","spanon");
+		}
+		for(var i=0,len=cdots.length;i<len;i++){
+			(function(i){
+				cdots[i].onclick=function(){
+					var dis=index-i;
+					var ch=parseInt(cwrap.style.left);
+					cwrap.style.left=(ch+dis*400)+"px";
+					console.log(cwrap.style.left);
+					index=i;
+					showCurrentDot();
+				}
+			})(i);
+		}
+		function login(){
+			i=0;
+			j=0;
+			var div=document.createElement("div");
+			div.setAttribute("id","div");
+			var cdiv=document.createElement("div");
+			cdiv.setAttribute("id","cdiv");
+			div.appendChild(cdiv);
+			document.body.appendChild(div);
+
+			var cbtn=document.createElement("button");
+			cbtn.setAttribute("id","cbtn");
+			cbtn.innerHTML="取消";
+			cdiv.appendChild(cbtn);
+
+			var cp=document.createElement("p");
+			cp.setAttribute("id","p");
+			cdiv.appendChild(cp);
+
+			var cfrom=document.createElement("from");
+			cdiv.appendChild(cfrom);
+
+			var cp1=document.createElement("p");
+			cfrom.appendChild(cp1);
+
+			var cp2=document.createElement("p");
+			cfrom.appendChild(cp2);
+
+			var cspan1=document.createElement("p");
+			cspan1.innerHTML="用户名";
+			cspan1.setAttribute("id","cspan");
+			cp1.appendChild(cspan1);
+
+			var cspan2=document.createElement("p");
+			cspan2.innerHTML="密码";
+			cspan2.setAttribute("id","cspan");
+			cp2.appendChild(cspan2);
+
+
+			var cinput1=document.createElement("input");
+			cinput1.setAttribute("type","text");
+			cinput1.setAttribute("id","cinput");
+			cp1.appendChild(cinput1);
+
+			var cinput2=document.createElement("input");
+			cinput2.setAttribute("type","textbox");
+			cinput2.setAttribute("id","cinput");
+			cp2.appendChild(cinput2);
+
+			var cdivs=document.createElement("div");
+			cdivs.setAttribute("id","cdivs");
+			cdiv.appendChild(cdivs);
+
+			var cinput3=document.createElement("input");
+			cinput3.setAttribute("id","cinput3");
+			cinput3.setAttribute("type","button");
+			cinput3.value="登录";
+			cdivs.appendChild(cinput3);
+
+			var ca=document.createElement("a");
+			ca.setAttribute("id","ca");
+			ca.setAttribute("href","#");
+			ca.innerHTML="忘记密码";
+			cdivs.appendChild(ca);
+
+			function fun1(){
+				if(cinput1.innerHTML!=""){
+					cspan1.innerHTML="";
+				}
+				else{
+					cspan1.innerHTML="用户名";
+				}
+			}
+			id=null;
+			cinput1.onmouseover=function(){
+				cinput1.focus();
+				cspan1.innerHTML="";
+			}
+			cinput1.onmouseout=function(){
+				cinput1.blur();
+				if(cinput1.value==""){
+					cspan1.innerHTML="用户名";
+				}
+			}
+			cinput2.onmouseover=function(){
+				cinput2.focus();
+				cspan2.innerHTML="";
+			}
+			cinput2.onmouseout=function(){
+				cinput2.blur();
+				if(cinput2.value==""){
+					cspan2.innerHTML="密码";
+				}
+			}
+			cspan1.onmouseover=function(){
+				cinput1.focus();
+				cspan1.innerHTML="";
+			}
+			cspan1.onmouseout=function(){
+				cinput1.blur();
+				if(cinput1.value==""){
+					cspan1.innerHTML="用户名";
+				}
+			}
+			cspan2.onmouseover=function(){
+				cinput2.focus();
+				cspan2.innerHTML="";
+			}
+			cspan2.onmouseout=function(){
+				cinput2.blur();
+				if(cinput2.value==""){
+					cspan2.innerHTML="密码";
+				}
+			}
+			cinput3.onclick=function(){
+				if(cinput1.value==""){
+					alert("请输入用户名");
+				}
+				else if(cinput2.value==""){
+					alert("请输入密码");
+				}
+				else{
+					alert(cinput1.value+"欢迎回来");
+					document.body.removeChild(div);
+				}
+
+			}
+			cbtn.onclick=function(){
+				document.body.removeChild(div);
+			}
+		}
+		function register(){
+			var div=document.createElement("div");
+			div.setAttribute("id","div");
+
+			var cdiv=document.createElement("div");
+			cdiv.setAttribute("id","cdiv");
+			div.appendChild(cdiv);
+			document.body.appendChild(div);
+
+			var cbtn=document.createElement("button");
+			cbtn.setAttribute("id","cbtn");
+			cbtn.innerHTML="取消";
+			cdiv.appendChild(cbtn);
+			cbtn.onclick=function(){
+				document.body.removeChild(div);
+			}
+
+			var cp=document.createElement("p");
+			cp.setAttribute("id","p");
+			cdiv.appendChild(cp);
+
+			var cfrom=document.createElement("from");
+			cdiv.appendChild(cfrom);
+
+			var cp1=document.createElement("p");
+			cfrom.appendChild(cp1);
+			var cp2=document.createElement("p");
+			cfrom.appendChild(cp2);
+			var cp3=document.createElement("p");
+			cfrom.appendChild(cp3);
+			var cp4=document.createElement("p");
+			cfrom.appendChild(cp4);
+
+			var cspan1=document.createElement("p");
+			cspan1.innerHTML="用户名";
+			cspan1.setAttribute("id","cspan");
+			cp1.appendChild(cspan1);
+
+			var cspan4=document.createElement("p");
+			cspan4.innerHTML="手机号";
+			cspan4.setAttribute("id","cspan");
+			cp4.appendChild(cspan4);
+
+			var cspan2=document.createElement("p");
+			cspan2.innerHTML="密码";
+			cspan2.setAttribute("id","cspan");
+			cp2.appendChild(cspan2);
+
+			var cspan3=document.createElement("p");
+			cspan3.innerHTML="确认密码";
+			cspan3.setAttribute("id","cspan");
+			cp3.appendChild(cspan3);
+
+			var cinput1=document.createElement("input");
+			cinput1.setAttribute("type","text");
+			cinput1.setAttribute("id","cinput");
+			cp1.appendChild(cinput1);
+
+			var cinput2=document.createElement("input");
+			cinput2.setAttribute("type","textbox");
+			cinput2.setAttribute("id","cinput");
+			cp2.appendChild(cinput2);
+
+			var cinput4=document.createElement("input");
+			cinput4.setAttribute("type","text");
+			cinput4.setAttribute("id","cinput");
+			cp3.appendChild(cinput4);
+
+			var cinput5=document.createElement("input");
+			cinput5.setAttribute("type","text");
+			cinput5.setAttribute("id","cinput");
+			cp4.appendChild(cinput5);
+
+			var cdivs=document.createElement("div");
+			cdivs.setAttribute("id","cdivs");
+			cdiv.appendChild(cdivs);
+
+			var cinput3=document.createElement("input");
+			cinput3.setAttribute("id","cinput33");
+			cinput3.setAttribute("type","button");
+			cinput3.value="注册";
+			cdivs.appendChild(cinput3);	
+
+			cinput1.onmouseover=function(){
+				cinput1.focus();
+				cspan1.innerHTML="";
+			}
+			cinput1.onmouseout=function(){
+				cinput1.blur();
+				if(cinput1.value==""){
+					cspan1.innerHTML="用户名";
+				}
+			}
+			cinput2.onmouseover=function(){
+				cinput2.focus();
+				cspan2.innerHTML="";
+			}
+			cinput2.onmouseout=function(){
+				cinput2.blur();
+				if(cinput2.value==""){
+					cspan2.innerHTML="密码";
+				}
+			}
+			cinput3.onclick=function(){
+				if(cinput1.value==""){
+					alert("请填写用户名");
+				}
+				else if(cinput2.value==""){
+					alert("请填写手机号");
+				}
+				else if(cinput4.vlaue==""){
+					alert("请填写密码");
+				}
+				else if(cinput5.value==""){
+					alert("请确认密码");
+				}
+				else if(cinput4.value!=cinput5.value){
+					alert("两次密码不相同");
+				}
+				else{
+					alert("注册成功");
+					var str=confirm("是否立即登录");
+					if(str==true){
+						document.body.removeChild(div);
+						login();
+					}
+					else{
+						document.body.removeChild(div);
+					}
+				}
+
+			}
+			cinput4.onmouseover=function(){
+				cinput4.focus();
+				cspan3.innerHTML="";
+			}
+			cinput4.onmouseout=function(){
+				cinput4.blur();
+				if(cinput4.value==""){
+					cspan3.innerHTML="确认密码";
+				}
+			}
+			cinput5.onmouseover=function(){
+				cinput5.focus();
+				cspan4.innerHTML="";
+			}
+			cinput5.onmouseout=function(){
+				cinput5.blur();
+				if(cinput5.value==""){
+					cspan4.innerHTML="手机号";
+				}
+			}
+			cspan1.onmouseover=function(){
+				cinput1.focus();
+				cspan1.innerHTML="";
+			}
+			cspan1.onmouseout=function(){
+				cinput1.blur();
+				if(cinput1.value==""){
+					cspan1.innerHTML="用户名";
+				}
+			}
+			cspan2.onmouseover=function(){
+				cinput2.focus();
+				cspan2.innerHTML="";
+			}
+			cspan2.onmouseout=function(){
+				cinput2.blur();
+				if(cinput2.value==""){
+					cspan2.innerHTML="密码";
+				}
+			}
+			cspan3.onmouseover=function(){
+				cinput4.focus();
+				cspan3.innerHTML="";
+			}
+			cspan3.onmouseout=function(){
+				cinput4.blur();
+				if(cinput4.value==""){
+					cspan3.innerHTML="确认密码";
+				}
+			}
+			cspan4.onmouseover=function(){
+				cinput5.focus();
+				cspan4.innerHTML="";
+			}
+			cspan4.onmouseout=function(){
+				cinput5.blur();
+				if(cinput5.value==""){
+					cspan4.innerHTML="手机号";
+				}
+			}
+		}
+        (function () {
+            var oList = document.getElementsByTagName('h2');
+            var oHide = document.getElementsByClassName('hide');
+            var oIcon = document.getElementsByTagName('i');
+            lastIndex = 0;
+            for(var i=0;i<oList.length;i++){
+                oList[i].index = i;
+                oList[i].isClick = false;
+                oHide[i].style.height = '0';
+                oList[i].onclick = function () {
+                    if(this.isClick){
+                        oHide[this.index].style.height = '0';
+                        oList[this.index].setAttribute("id","");
+                        oList[this.index].isClick = false;
+                        oIcon[this.index].setAttribute("id","");
+                    }
+                    else{
+                    	oHide[lastIndex].style.height = '0';
+                       	oIcon[lastIndex].className = '';
+                      	oList[lastIndex].className = '';
+                        oHide[this.index].style.height = '220px';
+                        oIcon[this.index].setAttribute("id","ion");
+                        oList[this.index].setAttribute("id","on");
+                        oList[this.index].isClick = true;
+                        oList[lastIndex].isClick = false;
+                        lastIndex = this.index;
+                    }
+                }
+            }
+        })();
+	</script>
+</body>
